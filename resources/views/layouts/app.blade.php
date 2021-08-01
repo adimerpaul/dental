@@ -36,6 +36,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="tratamiento">Tratamiento</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paciente">Paciente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="medico">Medico</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

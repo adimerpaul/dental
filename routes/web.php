@@ -23,3 +23,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('tratamiento',\App\Http\Controllers\TratamientoController::class)->middleware('auth');
 Route::resource('paciente',\App\Http\Controllers\PacienteController::class)->middleware('auth');
+Route::resource('medico',\App\Http\Controllers\MedicoController::class)->middleware('auth');
