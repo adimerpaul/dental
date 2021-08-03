@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Paciente;
+use App\Models\History;
 use Illuminate\Http\Request;
 
-class PacienteController extends Controller
+class HistoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class PacienteController extends Controller
      */
     public function index()
     {
-        $pacientes=Paciente::all();
-         return view ('paciente',['pacientes'=>$pacientes]);
+        //
     }
 
     /**
@@ -25,7 +24,7 @@ class PacienteController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
     /**
@@ -36,17 +35,16 @@ class PacienteController extends Controller
      */
     public function store(Request $request)
     {
-        Paciente::create($request->all());
-        return redirect('paciente');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Paciente  $paciente
+     * @param  \App\Models\History  $history
      * @return \Illuminate\Http\Response
      */
-    public function show(Paciente $paciente)
+    public function show(History $history)
     {
         //
     }
@@ -54,10 +52,10 @@ class PacienteController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Paciente  $paciente
+     * @param  \App\Models\History  $history
      * @return \Illuminate\Http\Response
      */
-    public function edit(Paciente $paciente)
+    public function edit(History $history)
     {
         //
     }
@@ -66,24 +64,22 @@ class PacienteController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Paciente  $paciente
+     * @param  \App\Models\History  $history
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Paciente $paciente)
+    public function update(Request $request, History $history)
     {
-        $paciente->update($request->all());
-        return redirect('paciente');
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Paciente  $paciente
+     * @param  \App\Models\History  $history
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Paciente $paciente)
+    public function destroy(History $history)
     {
-        $paciente->delete();
-        return redirect('paciente');
+        //
     }
 }

@@ -23,7 +23,6 @@ class CreateMedicosTable extends Migration
             $table->string("telefono");
             $table->string("direccion");
             $table->string("turno");
-
             $table->timestamps();
         });
     }

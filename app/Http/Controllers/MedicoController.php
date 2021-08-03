@@ -36,7 +36,8 @@ class MedicoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Medico::create($request->all());
+        return redirect('medico');
     }
 
     /**
@@ -70,7 +71,8 @@ class MedicoController extends Controller
      */
     public function update(Request $request, Medico $medico)
     {
-        //
+        $medico->update($request->all());
+        return redirect('medico');
     }
 
     /**
@@ -81,6 +83,7 @@ class MedicoController extends Controller
      */
     public function destroy(Medico $medico)
     {
-        //
+        $medico->delete();
+        return redirect('medico');
     }
 }
